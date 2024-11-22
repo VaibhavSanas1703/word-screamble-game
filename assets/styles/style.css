@@ -1,0 +1,139 @@
+
+*{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: 'Manrope',sans-serif;
+}
+
+:root{
+     --primary:#4335A7;
+     --text:#F4F6FF;
+
+}
+
+body{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     min-height: 100vh;
+     background: #160f3c;
+}
+
+.game-container{
+     width: 450px;
+     max-width: 95%;
+     height: auto;
+     background: #fff;
+     padding: 40px 30px;
+     border-radius: 15px;
+}
+
+.heading{
+     width: 100%;
+     text-align: center;
+     border-bottom: 1px solid #ddd;
+     margin-bottom: 20px;
+}
+
+.heading h1{
+     font-size: clamp(1.7rem,5vw,1.8rem);
+     color: #1a1a1a;
+     margin-bottom: 15px;
+     font-weight: 700;
+}
+
+.random-word{
+     width: 100%;
+     margin: 20px 0;
+     text-align: center;
+}
+
+.random-word h2{
+     letter-spacing: 15px;
+     font-size: 1.5rem;
+}
+
+.time{
+     width: 100%;
+     text-align: left;
+     margin: 25px 0;
+}
+
+.time p{
+     font-weight: 500;
+}
+
+.input-box{
+     width: 100%;
+     height: 50px;
+     margin: 15px 0;
+}
+
+.input-box input{
+     width: 100%;
+     height: 100%;
+     font-size: 16px;
+     padding: 0 12px;
+     border: none;
+     outline: none;
+     font-weight: 500;
+     border: 1px solid #ddd;
+     border-radius: 4px;
+}
+
+
+.btns{
+     width: 100%;
+     height: 49px;
+     display: flex;
+     justify-content: space-evenly;
+     align-items: center;
+     margin: 21px 0 15px 0;
+}
+
+.btns button{
+     padding: 0 30px;
+     height: 100%;
+     font-size: 16px;
+     letter-spacing: 0.2px;
+     font-weight: 500;
+     background: var(--primary);
+     color: var(--text);
+     outline: none;
+     border: 0;
+     border-radius: 4px;
+     cursor: pointer;
+}
+
+button:active{
+     scale: 0.99;
+}
+
+#startBtn{
+     padding: 10px 30px;
+     font-size: 16px;
+     font-weight: 500;
+     background: var(--primary);
+     color: #fff;
+     outline: none;
+     border: 0;
+     border-radius: 5px;
+     letter-spacing: 0.3px;
+     cursor: pointer;
+}
+
+@media (max-width:400px){
+     .btns{
+          flex-direction: column;
+          height: auto;
+          justify-content: center;
+          align-items: normal;
+          gap: 8px;
+     }
+
+     .btns button{
+          padding: 13px;
+     }
+}
+
